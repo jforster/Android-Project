@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#6E6E6E"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:onClick="playGame"
+        android:text="@string/playGame" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:onClick="handleButtonSettings"
+        android:text="@string/settings" />
+    
+    <Button
+        android:id="@+id/HighscoresButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:onClick="handleButtonHighscores"
+        android:text="@string/highscores" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:contentDescription="@string/titleIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/title" />
+    
+    <EditText
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:clickable="false"
+         android:cursorVisible="false"
+         android:focusable="false"
+         android:focusableInTouchMode="false"
+         android:gravity="bottom|right"
+         android:text="@string/createdBy"
+         android:inputType="none"
+         android:background="#00000000"
+         android:textSize="12sp" >
+            
+        <requestFocus />
+    </EditText>
+    
+</RelativeLayout>

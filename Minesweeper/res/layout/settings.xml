@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6E6E6E"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/clearHighscores"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="clearHighscores"
+        android:text="@string/clearHighscores" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:contentDescription="@string/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/clearHighscores"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="66dp"
+        android:src="@drawable/settings" />
+    
+    <EditText
+        android:id="@+id/credits"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/clearHighscores"
+         android:layout_marginTop="5dp"
+         android:clickable="false"
+         android:cursorVisible="false"
+         android:focusable="false"
+         android:focusableInTouchMode="false"
+         android:gravity="center"
+         android:text="@string/credits"
+         android:inputType="none"
+         android:background="#00000000"
+         android:textSize="20sp" >
+            
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/ryan"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/credits"
+         android:clickable="false"
+         android:cursorVisible="false"
+         android:focusable="false"
+         android:focusableInTouchMode="false"
+         android:gravity="center"
+         android:text="@string/ryan"
+         android:inputType="none"
+         android:background="#00000000"
+         android:textSize="20sp" >
+            
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/jeff"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/ryan"
+         android:clickable="false"
+         android:cursorVisible="false"
+         android:focusable="false"
+         android:focusableInTouchMode="false"
+         android:gravity="center"
+         android:text="@string/jeff"
+         android:inputType="none"
+         android:background="#00000000"
+         android:textSize="20sp" >
+            
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

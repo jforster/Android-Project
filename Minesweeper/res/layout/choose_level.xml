@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#6E6E6E"
+    tools:context=".MainActivity" >
+
+    
+	<Button
+	    android:id="@+id/easy"
+	    android:layout_width="150dp"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginRight="114dp"
+	    android:layout_marginTop="154dp"
+	    android:gravity="center"
+	    android:onClick="easy"
+	    android:text="@string/easy" />
+	
+	<Button
+	    android:id="@+id/med"
+	    android:layout_width="150dp"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/easy"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="22dp"
+	    android:gravity="center"
+	    android:onClick="med"
+	    android:text="@string/med" />
+	
+	<Button
+	    android:id="@+id/hard"
+	    android:layout_width="150dp"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/med"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="28dp"
+	    android:gravity="center"
+	    android:onClick="hard"
+	    android:text="@string/hard" />
+
+	<ImageView
+	    android:id="@+id/imageView1"
+	    android:layout_width="wrap_content"
+	    android:contentDescription="@string/selectLevel"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"
+	    android:gravity="center"
+	    android:layout_marginTop="42dp"
+	    android:src="@drawable/choose_level" />
+
+</RelativeLayout>
